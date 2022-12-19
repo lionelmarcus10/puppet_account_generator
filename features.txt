@@ -1,0 +1,18 @@
+Project features: 
+
+- local_host to stock informations
+- 
+
+Fake accounts platform:
+- Discord
+- Facebook
+- Gmail
+- Yahoo
+- Hotmail
+- Instagram
+- Twitter
+- Snapchat
+- Netflix
+- Steam
+- Linkedin
+- Microsoft

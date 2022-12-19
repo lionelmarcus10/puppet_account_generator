@@ -1,0 +1,23 @@
+{
+  "name": "puppet_account_generator",
+  "version": "1.0.0",
+  "description": "Puppet Account Generator",
+  "main": "Start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lionelmarcus10/puppet_account_generator.git"
+  },
+  "author": "lionel_marcus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lionelmarcus10/puppet_account_generator/issues"
+  },
+  "homepage": "https://github.com/lionelmarcus10/puppet_account_generator#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0"
+  }
+}
