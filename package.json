@@ -22,6 +22,7 @@
     "@faker-js/faker": "^7.6.0"
   },
   "dependencies": {
+    "captcha-service": "^1.0.9",
     "chalk": "^5.2.0",
     "inquirer": "^9.1.4",
     "puppeteer": "^19.4.1"
