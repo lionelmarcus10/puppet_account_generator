@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Puppet Account Generator",
   "main": "Start.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node start"
@@ -19,5 +20,10 @@
   "homepage": "https://github.com/lionelmarcus10/puppet_account_generator#readme",
   "devDependencies": {
     "@faker-js/faker": "^7.6.0"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "inquirer": "^9.1.4",
+    "puppeteer": "^19.4.1"
   }
 }

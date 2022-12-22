@@ -1,18 +1,11 @@
+GuideLine
+- Create fake profile 
+- Create first fake accounts on platforms ( checking if exist ..... )
+
 Project features: 
-
+- profile displayer on terminal and web browser and console like python
 - local_host to stock informations
-- 
-
-Fake accounts platform:
-- Discord
-- Facebook
-- Gmail
-- Yahoo
-- Hotmail
-- Instagram
-- Twitter
-- Snapchat
-- Netflix
-- Steam
-- Linkedin
-- Microsoft
+- vpn
+- recaptcha bypass 
+- multi threading accounts creation
+- email validity checking
