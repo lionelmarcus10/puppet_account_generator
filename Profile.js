@@ -13,9 +13,12 @@ export class Profile {
     this.birthMonth = this.birthday.getMonth()+1
     this.age = (new Date().getFullYear()) - this.birthYear
     this.birthDay = this.birthday.getDate()
+    // generate city and country with other api 
     this.country = faker.address.country()
-    this.city = faker.address.cityName() 
+    this.city = faker.address.cityName()
+    // generate a random password with 10 characters and 1 special character and 1 number  and 1 uppercase letter with regex  
     this.password = "Borouto=10"
+    // revoir fonctions dépendantes de email faker 
     this.email = faker.internet.email();
   }
   get Profile() {

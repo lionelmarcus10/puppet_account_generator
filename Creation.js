@@ -10,13 +10,8 @@ const createLinkedinAccount = async (profile) => {
   const context = await browser.createIncognitoBrowserContext();
   const page = await browser.newPage() 
   
-  // parse user response
   // check if the email will be valid or not 
   // resolve captcha
-  // multiple inscriptions in the same time on differents sites
-  // switch between tabs or browser
-  // afficher les identifiants dans la console
-  // browser.close()
   await page.goto('https://www.linkedin.com/start/join');
 
   // first step
@@ -43,4 +38,33 @@ const createLinkedinAccount = async (profile) => {
   //await browser.close();
 }
 
-export default createLinkedinAccount;
+
+
+const createGmailAccount = async (profile) => {
+  // init browser in incognito mode
+  const browser = await puppeteer.launch({
+    headless: false,
+    args: ["--proxy-server=socks5://127.0.0.1:9050","--no-sandbox", "--disable-setuid-sandbox", "--incognito"],
+  });
+  // create new page in incognito mode
+  const context = await browser.createIncognitoBrowserContext();
+  const page = await context.newPage() 
+  
+  // check if the email will be valid or not 
+  // resolve captcha
+  await page.goto("https://accounts.google.com/signup/v2/webcreateaccount?flowName=GlifWebSignIn&flowEntry=SignUp")
+  await page.type('#firstName', profile.firstName)
+  await page.type('#lastName', profile.lastName)
+  // check if the email will be valid or not before submiting the form of google account creation 
+  // if valid generate another email and check again
+  await page.type('#username', profile.email.split('@')[0])
+  // remplir les champs de password et confirmer le password
+  // validate the checkbox of terms of service
+  //await page.type('confirm-passwd', profile.password)
+  //await page.type('#passwd', profile.password)
+
+}
+
+
+// creer une classe puis exporter la classe 
+export default createGmailAccount;

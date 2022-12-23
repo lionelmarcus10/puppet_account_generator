@@ -1,6 +1,6 @@
 import inquirer from 'inquirer';
 import {Profile} from './Profile.js';
-import createLinkedinAccount  from "./Creation.js";
+import createGmailAccount  from "./Creation.js";
 import chalk from 'chalk';
 
 
@@ -16,4 +16,4 @@ let choice = inquirer.prompt({type: "list", name:"choice", message: "What do you
 // if create an account on all platform
 // if exit
 
-createLinkedinAccount(User_Profile);
+createGmailAccount(User_Profile);

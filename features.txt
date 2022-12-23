@@ -1,11 +1,11 @@
 GuideLine
-- Create fake profile 
-- Create first fake accounts on platforms ( checking if exist ..... )
+- Create fake profile                                                           - done with faker 
+- Create first fake accounts on platforms ( checking if exist ..... ) 
 
 Project features: 
 - profile displayer on terminal and web browser and console like python
 - local_host to stock informations
-- vpn
+- vpn                                                                           - done with tor
 - recaptcha bypass 
 - multi threading accounts creation
-- email validity checking
+- email validity checking                                                       - doing with hippo
